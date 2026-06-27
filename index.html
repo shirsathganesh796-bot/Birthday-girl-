@@ -1,1 +1,260 @@
+REPLACE ONLY THE "<body>" PART OF YOUR FILE WITH THIS:
 
+<body>
+
+<div id="envelopeScreen">
+  <div class="envelope" onclick="openLetter()">
+    <div class="envelope-text">
+      A Little Something<br>For You 💗
+    </div>
+  </div>
+</div>
+
+<div id="slider">
+
+  <!-- Slide 1 -->
+  <div class="slide active pink">
+    <h1>🎂 HAPPY BIRTHDAY PARUU 🎂</h1>
+    <h3>From Ganesh ✨</h3>
+    <div class="message">
+      Welcome to your little birthday surprise 💗
+    </div>
+    <button onclick="nextSlide()">Next ❤️</button>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide white">
+    <img src="photo1.png" class="photo">
+    <div class="message">
+      Happy Birthday Dear! ✨<br><br>
+      Wishing you a day full of happiness, laughter and beautiful memories. 😊<br><br>
+      Tu nehmich ashich hasat raha ani tujhe sagle dreams purn hovet 🌸
+    </div>
+    <button onclick="nextSlide()">Next ❤️</button>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide purple">
+    <div class="bigHeart">💗</div>
+    <div class="message">
+      Tula ek sangayche hote... ❤️<br><br>
+      Tu vichar kart asel ha mulga achanak kasky maghe padla majhya.
+    </div>
+    <button onclick="nextSlide()">Next ❤️</button>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide pink">
+    <img src="photo2.jpg" class="photo">
+    <div class="message">
+      Tujhya sobatchya kahi moments khup special vatatat. ✨
+    </div>
+    <button onclick="nextSlide()">Next ❤️</button>
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="slide white">
+    <div class="bigHeart">✨💗✨</div>
+    <div class="message">
+      Tar 23 November 2024...
+      <br><br>
+      Ti ek raatr, to karyakram...
+      majhya manacha asa game karun gela ki tya ratripasun mi full confused aahe.
+    </div>
+    <button onclick="nextSlide()">Next ❤️</button>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide purple">
+    <img src="photo3.png" class="photo">
+    <div class="message">
+      Kahi goshti aaplyala nakalat manat ghar karun bastat ❤️
+    </div>
+    <button onclick="nextSlide()">Next ❤️</button>
+  </div>
+
+  <!-- Slide 7 -->
+  <div class="slide pink">
+    <div class="bigHeart">🌸</div>
+    <div class="message">
+      Kahi lok bhetatat ani saglach vegla vatayla lagta...
+    </div>
+    <button onclick="nextSlide()">Next ❤️</button>
+  </div>
+
+  <!-- Slide 8 -->
+  <div class="slide white">
+    <img src="photo4.jpg" class="photo">
+    <div class="message">
+      Ani tya Blue-Green shade chya dress madhye tu evdhi bhaari disat hoti ki kay sangu... ❤️<br><br>
+      Tya divasanantar tujha to look, tujhe te hasna,
+      tujhi presence... saglach manat ghar karun baslay. ❤️✨
+    </div>
+    <button onclick="nextSlide()">Next ❤️</button>
+  </div>
+
+  <!-- Slide 9 -->
+  <div class="slide purple">
+    <div class="bigHeart">💞</div>
+    <div class="message">
+      He sagla sangaychi ichha hoti mhanun sangtoy...
+    </div>
+    <button onclick="nextSlide()">Next ❤️</button>
+  </div>
+
+  <!-- Slide 10 -->
+  <div class="slide pink">
+    <img src="photo5.png" class="photo">
+    <div class="message">
+      I know tu mala aadhich clear keley pn mla he sangaychi khoop ichha hoti mhanun he sangtoy.<br><br>
+
+      Tu yacha kahi vegla meaning nako lavun gheu.<br><br>
+
+      But really I still love you 💗🤍<br><br>
+
+      Enjoy your special day and have an amazing year ahead! 🎉
+    </div>
+    <button onclick="nextSlide()">Next ❤️</button>
+  </div>
+
+  <!-- Final Slide -->
+  <div class="slide white">
+    <h1>❤️ Thank You ❤️</h1>
+    <div class="message">
+      Once Again Happy Birthday Paruuu 🎂✨<br><br>
+      — Ganesh 💗
+    </div>
+  </div>
+
+</div>
+
+<style>
+
+#slider{
+display:none;
+height:100vh;
+}
+
+.slide{
+display:none;
+height:100vh;
+padding:20px;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+animation:fade 1s;
+}
+
+.active{
+display:flex;
+}
+
+.pink{
+background:linear-gradient(135deg,#ffb6d9,#ffd6e8);
+}
+
+.purple{
+background:linear-gradient(135deg,#d8b4ff,#f0d9ff);
+}
+
+.white{
+background:linear-gradient(135deg,#ffffff,#ffeef6);
+}
+
+.photo{
+width:90%;
+max-width:400px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+margin-bottom:20px;
+}
+
+.message{
+background:white;
+padding:20px;
+border-radius:20px;
+max-width:650px;
+line-height:1.8;
+box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+button{
+margin-top:20px;
+padding:12px 28px;
+border:none;
+border-radius:50px;
+background:#ff4f9a;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+.bigHeart{
+font-size:90px;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.2);
+}
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+
+<script>
+
+let currentSlide=0;
+const slides=document.querySelectorAll(".slide");
+
+function openLetter(){
+document.getElementById("envelopeScreen").style.display="none";
+document.getElementById("slider").style.display="block";
+}
+
+function nextSlide(){
+
+slides[currentSlide].classList.remove("active");
+
+currentSlide++;
+
+if(currentSlide<slides.length){
+slides[currentSlide].classList.add("active");
+}
+
+}
+
+for(let i=0;i<25;i++){
+
+let heart=document.createElement("div");
+
+heart.innerHTML="💗";
+
+heart.style.position="fixed";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.top=Math.random()*100+"vh";
+
+heart.style.fontSize="25px";
+
+heart.style.opacity=".3";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
